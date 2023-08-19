@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'quiz.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage(this.startQuiz, {super.key});
@@ -20,20 +20,24 @@ class SplashPage extends StatelessWidget {
               width: 300,
             ),
             const SizedBox(height: 28),
-            const Text(
+            Text(
               'Learn flutter the fun way!',
-              style: TextStyle(fontSize: 24, color: Colors.white),
+              style: GoogleFonts.lato(
+                fontSize: 24,
+                color: Colors.white,
+              ),
             ),
             const SizedBox(height: 24),
             OutlinedButton.icon(
               onPressed: startQuiz,
               icon: const Icon(Icons.arrow_right_alt),
               style: OutlinedButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Colors.deepPurple),
-              label: const Text(
+                backgroundColor: Colors.white,
+                foregroundColor: Colors.deepPurple,
+              ),
+              label: Text(
                 'Start Quiz',
-                style: TextStyle(fontSize: 24),
+                style: GoogleFonts.lato(fontSize: 24),
               ),
             )
           ],
