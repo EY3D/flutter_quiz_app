@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class QuizAnswerBtn extends StatelessWidget {
-  QuizAnswerBtn(this.questionText, this.onTap, {super.key});
+  const QuizAnswerBtn(this.questionText, this.onTap, {super.key});
 
   final String questionText;
   final void Function() onTap;
